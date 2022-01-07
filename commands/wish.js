@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.names = exports.run = void 0;
 function run(e) {
     var d = Math.random();
-    var roll = (Math.floor(Math.random() * 13) + 1);
+    var roll = (Math.floor(Math.random() * 15) + 1);
     //console.log('chance: ' + d, '  roll: ' + roll)
     if (roll == 1 && d < 0.5) {
         e.message.reply(`ты выбил`, {
@@ -121,6 +121,26 @@ function run(e) {
         });
     }
     else if (roll == 13 && d > 0.11) {
+        e.message.reply(`ты ничего выбил...`);
+    }
+    else if (roll == 14 && d < 0.09) {
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/14.png"
+            ]
+        });
+    }
+    else if (roll == 14 && d > 0.09) {
+        e.message.reply(`ты ничего выбил...`);
+    }
+    else if (roll == 15 && d < 0.1) {
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/15.png"
+            ]
+        });
+    }
+    else if (roll == 15 && d > 0.1) {
         e.message.reply(`ты ничего выбил...`);
     }
 }

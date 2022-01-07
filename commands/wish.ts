@@ -4,7 +4,7 @@ import {runEvent} from "../index";
 
 export function run(e:runEvent) {
     var d = Math.random();
-    var roll =(Math.floor(Math.random()*13)+1);
+    var roll =(Math.floor(Math.random()*15)+1);
     //console.log('chance: ' + d, '  roll: ' + roll)
     if (roll == 1 && d < 0.5) {    
     e.message.reply(`ты выбил`, {
@@ -123,7 +123,27 @@ export function run(e:runEvent) {
         } 
     else if (roll == 13 && d > 0.11) { 
         e.message.reply(`ты ничего выбил...`)
-        }                                                                        
+        }  
+    else if (roll == 14 && d < 0.09) { 
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/14.png"
+            ]
+        });
+        }
+    else if (roll == 14 && d > 0.09) { 
+        e.message.reply(`ты ничего выбил...`)
+        }          
+    else if (roll == 15 && d < 0.1) { 
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/15.png"
+            ]
+        });
+        }
+    else if (roll == 15 && d > 0.1) { 
+        e.message.reply(`ты ничего выбил...`)
+        }          
 }
 
 
