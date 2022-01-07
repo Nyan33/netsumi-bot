@@ -32,7 +32,7 @@ const dev = process.env.NODE_ENV === "dev", client = new discord_js_1.Client(), 
 });
 client.once("ready", () => {
     console.log(`Logged in as ${client.user.tag}`);
-    client.user.setActivity('ёблю с няном', { type: 'PLAYING' }).catch(console.error);
+    client.user.setActivity('n!хелп', { type: 'LISTENING' }).catch(console.error);
 });
 client.on("message", (message) => __awaiter(void 0, void 0, void 0, function* () {
     if (message.channel.type === "dm" || message.author.bot || !message.content.startsWith(config_1.default.prefix))

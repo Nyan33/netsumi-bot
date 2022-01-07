@@ -28,7 +28,7 @@ readdir('./commands/', (err, allFiles) => {
 
 client.once("ready", () => {
    console.log(`Logged in as ${client.user.tag}`);
-   client.user.setActivity('ёблю с няном', { type: 'PLAYING'}).catch(console.error)
+   client.user.setActivity('n!хелп', { type: 'LISTENING'}).catch(console.error)
 });
 
 client.on("message", async message => {
