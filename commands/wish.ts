@@ -80,7 +80,14 @@ export function run(e:runEvent) {
                 "./pics/11.mp4"
             ]
         });
-        }                                               
+        }   
+    if (roll == 12) { 
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/12.png"
+            ]
+        });
+        }                                                     
 }
 
 export const names = ["карта"];
