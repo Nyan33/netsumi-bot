@@ -70,14 +70,14 @@ export function run(e:runEvent) {
     if (roll == 10) { 
         e.message.reply(`ты выбил`, {
             files: [
-                "./pics/1.mp4"
+                "./pics/10.mp4"
             ]
         });
         }   
     if (roll == 11) { 
         e.message.reply(`ты выбил`, {
             files: [
-                "./pics/2.mp4"
+                "./pics/11.mp4"
             ]
         });
         }                                               
