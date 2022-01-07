@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import {runEvent} from "../index";
 
 export function run(e:runEvent) {
-    var roll =(Math.floor(Math.random()*11)+1);
+    var roll =(Math.floor(Math.random()*12)+1);
     if (roll == 1) { 
     e.message.reply(`ты выбил`, {
         files: [
