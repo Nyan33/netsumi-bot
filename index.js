@@ -77,8 +77,8 @@ client.on('raw', (packet) => {
         }
     });
 });
-if (process.env.TOKEN)
-    client.login(process.env.TOKEN);
+if (process.env.DISCORD_BOT_TOKEN)
+    client.login(process.env.DISCORD_BOT_TOKEN);
 else {
     console.log("Create a file called .env and put your bot's token in there.");
     process.exit(1);
