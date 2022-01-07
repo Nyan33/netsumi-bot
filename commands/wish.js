@@ -90,7 +90,7 @@ function run(e) {
     if (roll == 13) {
         e.message.reply(`ты выбил`, {
             files: [
-                "./pics/13.png"
+                "./pics/13.jpg"
             ]
         });
     }
