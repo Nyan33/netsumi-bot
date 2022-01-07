@@ -5,7 +5,7 @@ import {runEvent} from "../index";
 export function run(e:runEvent) {
     var d = Math.random();
     var roll =(Math.floor(Math.random()*13)+1);
-    console.log('chance: ' + d, '  roll: ' + roll)
+    //console.log('chance: ' + d, '  roll: ' + roll)
     if (roll == 1 && d < 0.5) {    
     e.message.reply(`ты выбил`, {
         files: [
