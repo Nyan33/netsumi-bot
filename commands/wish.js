@@ -83,7 +83,7 @@ function run(e) {
     else if (roll == 8 || roll == 9 && d > 0.9) {
         e.message.reply(`ты ничего выбил...`);
     }
-    else if (roll == 10 && d < 0.01) {
+    else if (roll == 10 && d < 0.1) {
         e.message.reply(`ты выбил`, {
             files: [
                 "./pics/10.mp4"
@@ -93,7 +93,7 @@ function run(e) {
     else if (roll == 10 && d > 0.1) {
         e.message.reply(`ты ничего выбил...`);
     }
-    else if (roll == 11 && d < 0.01) {
+    else if (roll == 11 && d < 0.1) {
         e.message.reply(`ты выбил`, {
             files: [
                 "./pics/11.mp4"
@@ -126,7 +126,7 @@ function run(e) {
     else if (roll == 14 && d < 0.09) {
         e.message.reply(`ты выбил`, {
             files: [
-                "./pics/14.png"
+                "./pics/14.jpg"
             ]
         });
     }
@@ -136,7 +136,7 @@ function run(e) {
     else if (roll == 15 && d < 0.1) {
         e.message.reply(`ты выбил`, {
             files: [
-                "./pics/15.png"
+                "./pics/15.jpg"
             ]
         });
     }
