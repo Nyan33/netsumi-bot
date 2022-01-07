@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.names = exports.run = void 0;
 function run(e) {
-    var roll = (Math.floor(Math.random() * 12) + 1);
+    var roll = (Math.floor(Math.random() * 13) + 1);
     if (roll == 1) {
         e.message.reply(`ты выбил`, {
             files: [
@@ -84,6 +84,13 @@ function run(e) {
         e.message.reply(`ты выбил`, {
             files: [
                 "./pics/12.png"
+            ]
+        });
+    }
+    if (roll == 13) {
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/13.png"
             ]
         });
     }
