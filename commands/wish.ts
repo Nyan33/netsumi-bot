@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import {runEvent} from "../index";
 
 export function run(e:runEvent) {
-    var roll =(Math.floor(Math.random()*9)+1);
+    var roll =(Math.floor(Math.random()*11)+1);
     if (roll == 1) { 
     e.message.reply(`ты выбил`, {
         files: [
@@ -66,7 +66,21 @@ export function run(e:runEvent) {
                 "./pics/9.jpg"
             ]
         });
-        }                                        
+        }  
+    if (roll == 10) { 
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/1.mp4"
+            ]
+        });
+        }   
+    if (roll == 11) { 
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/2.mp4"
+            ]
+        });
+        }                                               
 }
 
 export const names = ["карта"];
