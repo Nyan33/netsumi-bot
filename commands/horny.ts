@@ -65,7 +65,7 @@ export function run(e:runEvent) {
     if (roll == 5 && d < 0.013) {    
     e.message.reply(`ты выбил`, {
         files: [
-            "./pics/h3.jpg"
+            "./pics/h6.jpg"
         ]
     });   
     }   
