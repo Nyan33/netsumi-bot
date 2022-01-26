@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.names = exports.run = void 0;
 function run(e) {
     var d = Math.random();
-    var roll = (Math.floor(Math.random() * 5) + 1);
+    var roll = (Math.floor(Math.random() * 7) + 1);
     //console.log('chance: ' + d, '  roll: ' + roll)
     if (roll == 1 && d < 0.9) { //шар
         e.message.reply(`ты выбил`, {
@@ -68,6 +68,34 @@ function run(e) {
         e.message.reply(`ты выбил`, {
             files: [
                 "./wish/2.png"
+            ]
+        });
+    }
+    if (roll == 6 && d < 0.08) { //ехе
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./wish/6.png"
+            ]
+        });
+    }
+    else if (roll == 6 && d > 0.08) {
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./wish/1.png"
+            ]
+        });
+    }
+    if (roll == 7 && d < 0.1) { //нянцелло
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./wish/7.png"
+            ]
+        });
+    }
+    else if (roll == 7 && d > 0.1) {
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./wish/1.png"
             ]
         });
     }

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.names = exports.run = void 0;
 function run(e) {
     var d = Math.random();
-    var roll = (Math.floor(Math.random() * 17) + 1);
+    var roll = (Math.floor(Math.random() * 22) + 1);
     //console.log('chance: ' + d, '  roll: ' + roll)
     if (roll == 1 && d < 0.5) {
         e.message.reply(`ты выбил`, {
@@ -161,6 +161,56 @@ function run(e) {
         });
     }
     else if (roll == 17 && d > 0.09) {
+        e.message.reply(`ты ничего выбил...`);
+    }
+    else if (roll == 18 && d < 0.07) { //сверх форма
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/18.gif"
+            ]
+        });
+    }
+    else if (roll == 18 && d > 0.07) {
+        e.message.reply(`ты ничего выбил...`);
+    }
+    else if (roll == 19 && d < 0.2) { //амогас
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/19.gif"
+            ]
+        });
+    }
+    else if (roll == 19 && d > 0.2) {
+        e.message.reply(`ты ничего выбил...`);
+    }
+    else if (roll == 20 && d < 0.2) { //готовь сраку
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/20.gif"
+            ]
+        });
+    }
+    else if (roll == 20 && d > 0.2) {
+        e.message.reply(`ты ничего выбил...`);
+    }
+    else if (roll == 21 && d < 0.2) { //ril nyqn
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/21.png"
+            ]
+        });
+    }
+    else if (roll == 21 && d > 0.2) {
+        e.message.reply(`ты ничего выбил...`);
+    }
+    else if (roll == 22 && d < 0.1) { //ril nyqn
+        e.message.reply(`ты выбил`, {
+            files: [
+                "./pics/22.png"
+            ]
+        });
+    }
+    else if (roll == 22 && d > 0.1) {
         e.message.reply(`ты ничего выбил...`);
     }
 }

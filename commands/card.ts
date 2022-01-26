@@ -4,7 +4,7 @@ import {runEvent} from "../index";
 
 export function run(e:runEvent) {
     var d = Math.random();
-    var roll =(Math.floor(Math.random()*21)+1);
+    var roll =(Math.floor(Math.random()*22)+1);
     //console.log('chance: ' + d, '  roll: ' + roll)
     if (roll == 1 && d < 0.5) {    
     e.message.reply(`ты выбил`, {
@@ -203,7 +203,17 @@ export function run(e:runEvent) {
         }
     else if (roll == 21 && d > 0.2) { 
         e.message.reply(`ты ничего выбил...`)
-        }                 
+        }      
+        else if (roll == 22 && d < 0.1) { //ril nyqn
+            e.message.reply(`ты выбил`, {
+                files: [
+                    "./pics/22.png"
+                ]
+            });
+            }
+        else if (roll == 22 && d > 0.1) { 
+            e.message.reply(`ты ничего выбил...`)
+            }                 
 }
 
 
